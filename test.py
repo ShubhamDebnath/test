@@ -1,3 +1,4 @@
+import os
 import sqlite3 as sql
 from flask import Flask, render_template, request, jsonify
 
@@ -54,4 +55,4 @@ def store():
 
 
 if __name__ == '__main__':
-	app.run(debug = True)
+	app.run(debug = True, port = int(os.environ.get('PORT', 33507)))
