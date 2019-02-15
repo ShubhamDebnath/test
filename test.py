@@ -54,4 +54,4 @@ def store():
 
 
 if __name__ == '__main__':
-	app.run(debug = True, host = 'Shubham.herokuapp', port = '8080')
+	app.run(debug = True)
